@@ -6,6 +6,9 @@
         <entry key="..\:/Users/Sonny/AndroidStudioProjects/FitCoach/app/src/main/res/layout/activity_home.xml" value="0.1984375" />
         <entry key="..\:/Users/Sonny/AndroidStudioProjects/FitCoach/app/src/main/res/layout/activity_login.xml" value="0.1984375" />
         <entry key="..\:/Users/Sonny/AndroidStudioProjects/FitCoach/app/src/main/res/layout/activity_sign_up.xml" value="0.1984375" />
+        <entry key="..\:/Users/Sonny/AndroidStudioProjects/FitCoach/app/src/main/res/layout/gym_profile_fragment.xml" value="0.25" />
+        <entry key="..\:/Users/Sonny/AndroidStudioProjects/FitCoach/app/src/main/res/layout/trainer_profile_fragment.xml" value="0.25" />
+        <entry key="..\:/Users/Sonny/AndroidStudioProjects/FitCoach/app/src/main/res/layout/user_profile_fragment.xml" value="0.18" />
       </map>
     </option>
   </component>

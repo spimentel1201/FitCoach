@@ -1,13 +1,98 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".UserProfileFragment">
 
-    <TextView
-        android:layout_width="match_parent"
+    <LinearLayout
+        android:layout_width="409dp"
         android:layout_height="match_parent"
-        android:text="Hello" />
+        android:gravity="center|center_vertical"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
 
-</FrameLayout>
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:contentDescription="TODO"
+            app:srcCompat="@drawable/user_profile" />
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="?android:attr/listDivider" />
+
+        <TextView
+            android:id="@+id/textName"
+            android:layout_width="216dp"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="10dp"
+            android:paddingBottom="20dp"
+            android:text="Nombre"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/textUserNameP"
+            android:layout_width="216dp"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="10dp"
+            android:paddingBottom="20dp"
+            android:text="Jon Doe Mi"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/textEmail"
+            android:layout_width="216dp"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="10dp"
+            android:paddingBottom="20dp"
+            android:text="Correo"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/textUserEmailP"
+            android:layout_width="216dp"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="10dp"
+            android:paddingBottom="20dp"
+            android:text="micorreo@gmail.com"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/textSex"
+            android:layout_width="216dp"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="10dp"
+            android:paddingBottom="20dp"
+            android:text="Sexo"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/textUserSex"
+            android:layout_width="216dp"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="10dp"
+            android:paddingBottom="20dp"
+            android:text="Masculino"
+            android:textAlignment="center" />
+
+        <View
+            android:id="@+id/divider4"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="?android:attr/listDivider" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="213dp"
+            android:layout_height="wrap_content"
+            android:text="Cerrar Sesion" />
+
+    </LinearLayout>
+
+</RelativeLayout>

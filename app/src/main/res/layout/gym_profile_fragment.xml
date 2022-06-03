@@ -39,7 +39,7 @@
 
         <TableLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="85dp">
 
             <TableRow
                 android:layout_width="match_parent"
@@ -49,51 +49,62 @@
                     android:id="@+id/textView3"
                     android:layout_width="206dp"
                     android:layout_height="wrap_content"
-                    android:text="Ubicación"
                     android:paddingHorizontal="10dp"
                     android:paddingTop="10dp"
                     android:paddingBottom="10dp"
+                    android:text="Ubicación"
                     android:textAlignment="textStart" />
 
                 <TextView
                     android:id="@+id/textView4"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
-                    android:text="Yanahuara"
                     android:paddingHorizontal="10dp"
                     android:paddingTop="10dp"
                     android:paddingBottom="10dp"
+                    android:text="Yanahuara"
                     android:textAlignment="textEnd" />
             </TableRow>
 
             <TableRow
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" >
+                android:layout_height="match_parent">
 
                 <TextView
                     android:id="@+id/textView5"
                     android:layout_width="206dp"
                     android:layout_height="wrap_content"
-                    android:text="Capacidad"
                     android:paddingHorizontal="10dp"
                     android:paddingTop="10dp"
                     android:paddingBottom="10dp"
+                    android:text="Capacidad"
                     android:textAlignment="textStart" />
 
                 <TextView
                     android:id="@+id/textView6"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
-                    android:text="21"
                     android:paddingHorizontal="10dp"
                     android:paddingTop="10dp"
                     android:paddingBottom="10dp"
+                    android:text="21"
                     android:textAlignment="textEnd" />
             </TableRow>
 
         </TableLayout>
 
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="366dp"
+            android:layout_gravity="center">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/listaUsuarios"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp" />
+
+        </ScrollView>
     </LinearLayout>
-
-
 </RelativeLayout>

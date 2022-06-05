@@ -15,7 +15,7 @@
         tools:layout_editor_absoluteY="1dp">
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/imageViewUser"
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:contentDescription="TODO"
@@ -73,7 +73,7 @@
             android:textAlignment="center" />
 
         <TextView
-            android:id="@+id/textUserSex"
+            android:id="@+id/textUserSexP"
             android:layout_width="216dp"
             android:layout_height="wrap_content"
             android:paddingHorizontal="10dp"
@@ -88,7 +88,7 @@
             android:background="?android:attr/listDivider" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/buttonSignOut"
             android:layout_width="213dp"
             android:layout_height="wrap_content"
             android:text="Cerrar Sesion" />

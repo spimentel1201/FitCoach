@@ -8,20 +8,22 @@
 
 
     <TextView
+        style="@android:style/Widget.TextView.PopupMenu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
         android:layout_marginEnd="20dp"
-        android:text="Dietas"/>
+        android:layout_marginBottom="10dp"
+        android:minHeight="48dp"
+        android:text="Dietas" />
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="620dp">
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/listDiet"
+            android:id="@+id/listDietUser"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginStart="20dp"

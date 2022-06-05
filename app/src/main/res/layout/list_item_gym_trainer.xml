@@ -23,23 +23,21 @@
             card_view:cardCornerRadius="20dp">
 
             <ImageView
-                android:id="@+id/imageGym"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:scaleType="centerCrop"
-                android:src="@drawable/trainer_1"
-                app:srcCompat="@drawable/gym_logo" />
+                android:src="@drawable/trainer_1" />
 
         </androidx.cardview.widget.CardView>
 
         <TextView
-            android:id="@+id/textGymName"
+            android:id="@+id/cardTrainerName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
             android:gravity="bottom"
             android:paddingStart="25dp"
-            android:text="CrossFit"
+            android:text="Jose"
             android:textSize="22sp"
             android:textStyle="bold" />
 

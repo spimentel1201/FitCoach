@@ -25,8 +25,10 @@
             android:id="@+id/textViewAppName"
             android:layout_width="216dp"
             android:layout_height="wrap_content"
+            android:fontFamily="cursive"
             android:text="FitCoach"
             android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
             android:textSize="28sp" />
 
         <View
@@ -43,6 +45,7 @@
             android:text="Correo" />
 
         <EditText
+            android:id="@+id/textEmailUserL"
             android:layout_width="216dp"
             android:layout_height="wrap_content"
             android:autofillHints=""
@@ -61,6 +64,7 @@
             android:text="Contraseña" />
 
         <EditText
+            android:id="@+id/textPasswordUserL"
             android:layout_width="216dp"
             android:layout_height="wrap_content"
             android:autofillHints=""
@@ -70,10 +74,13 @@
             android:paddingHorizontal="10dp" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/buttonSignIn"
             android:layout_width="213dp"
             android:layout_height="wrap_content"
-            android:text="Iniciar Sesion" />
+            android:background="#E0903A"
+            android:backgroundTint="#E0903A"
+            android:text="Iniciar Sesion"
+            android:textColor="#4A148C" />
 
         <!--<View
             android:id="@+id/divider4"
@@ -101,7 +108,7 @@
             android:orientation="horizontal">
 
             <ImageButton
-                android:id="@+id/imageButton2"
+                android:id="@+id/googleSignIn"
                 android:layout_width="50sp"
                 android:layout_height="50sp"
                 android:layout_weight="1"
@@ -116,7 +123,7 @@
                 android:background="?android:attr/listDivider" />
 
             <ImageButton
-                android:id="@+id/imageButton3"
+                android:id="@+id/facebookSignIn"
                 android:layout_width="50sp"
                 android:layout_height="50sp"
                 android:layout_weight="1"

@@ -79,6 +79,7 @@
             android:layout_height="wrap_content"
             android:background="#E0903A"
             android:backgroundTint="#E0903A"
+            android:onClick="iniciarSesion"
             android:text="Iniciar Sesion"
             android:textColor="#4A148C" />
 
@@ -131,5 +132,14 @@
                 tools:ignore="SpeakableTextPresentCheck" />
         </LinearLayout>
 
+        <Button
+            android:id="@+id/buttonSignUp"
+            android:layout_width="213dp"
+            android:layout_height="wrap_content"
+            android:background="#E0903A"
+            android:backgroundTint="#E0903A"
+            android:onClick="irRegistrarme"
+            android:text="Registrarme"
+            android:textColor="#4A148C" />
     </LinearLayout>
 </RelativeLayout>

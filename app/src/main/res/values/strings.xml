@@ -4,4 +4,7 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <string name="trainerProfile">Entrenadores</string>
+    <string name="GymProfile">Gimnasio</string>
+    <string name="Maps">Ubicacion</string>
 </resources>

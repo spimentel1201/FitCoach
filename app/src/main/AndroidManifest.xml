@@ -34,7 +34,7 @@
             android:exported="false"
             android:label="@string/title_activity_home" />
         <activity
-            android:name=".SplashScreenActivity"
+            android:name=".MainActivity"
             android:exported="false" />
         <activity
             android:name=".SignUpActivity"
@@ -43,7 +43,7 @@
             android:name=".LoginActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".SplashScreenActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

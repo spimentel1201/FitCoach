@@ -22,7 +22,7 @@ public class LoginActivity extends AppCompatActivity {
 
     /*Botón de redirección a registro*/
     public void iniciarSesion(View view){
-        Intent go = new Intent(this,MainActivity.class);
+        Intent go = new Intent(this,HomeActivity.class);
         startActivity(go);
     }
 }

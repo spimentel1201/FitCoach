@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
     tools:context=".SignUpActivity">
 
     <LinearLayout
@@ -19,7 +20,7 @@
             android:layout_width="131dp"
             android:layout_height="168dp"
             android:contentDescription="TODO"
-            app:srcCompat="@drawable/Logo" />
+            app:srcCompat="@drawable/logov2" />
 
         <TextView
             android:id="@+id/textViewAppName"
@@ -46,9 +47,7 @@
             android:id="@+id/textUserName"
             android:layout_width="216dp"
             android:layout_height="wrap_content"
-            android:autofillHints=""
             android:hint="Jon Mikel"
-            android:hintTextColor="#757575"
             android:inputType="text"
             android:minHeight="48dp"
             android:paddingHorizontal="10dp"
@@ -65,7 +64,6 @@
             android:id="@+id/textUserLastName"
             android:layout_width="216dp"
             android:layout_height="wrap_content"
-            android:autofillHints=""
             android:hint="Doe Dom"
             android:inputType="text"
             android:minHeight="48dp"
@@ -82,7 +80,6 @@
             android:id="@+id/textUserEmailR"
             android:layout_width="216dp"
             android:layout_height="wrap_content"
-            android:autofillHints=""
             android:hint="example@example.com"
             android:inputType="textEmailAddress"
             android:minHeight="48dp"
@@ -99,7 +96,6 @@
             android:id="@+id/textPasswordUserR"
             android:layout_width="216dp"
             android:layout_height="wrap_content"
-            android:autofillHints=""
             android:hint="********"
             android:inputType="textNoSuggestions|textPassword"
             android:minHeight="48dp"

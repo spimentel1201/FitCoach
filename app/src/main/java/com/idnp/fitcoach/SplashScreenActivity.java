@@ -23,7 +23,7 @@ public class SplashScreenActivity extends AppCompatActivity {
         Thread timer = new Thread(){
             public void run(){
                 try {
-                    sleep(3000); //espera de 1 segundo
+                    sleep(8000); //espera de 8 segundo
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }finally{

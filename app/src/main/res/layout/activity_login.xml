@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
     tools:context=".LoginActivity">
 
     <LinearLayout
@@ -19,7 +20,7 @@
             android:layout_width="217dp"
             android:layout_height="226dp"
             android:contentDescription="TODO"
-            app:srcCompat="@drawable/Logo" />
+            app:srcCompat="@drawable/logov2" />
 
         <TextView
             android:id="@+id/textViewAppName"
@@ -48,9 +49,7 @@
             android:id="@+id/textEmailUserL"
             android:layout_width="216dp"
             android:layout_height="wrap_content"
-            android:autofillHints=""
             android:hint="example@example.com"
-            android:hintTextColor="#757575"
             android:inputType="textEmailAddress"
             android:minHeight="48dp"
             android:paddingHorizontal="10dp"
@@ -67,7 +66,6 @@
             android:id="@+id/textPasswordUserL"
             android:layout_width="216dp"
             android:layout_height="wrap_content"
-            android:autofillHints=""
             android:hint="********"
             android:inputType="textNoSuggestions|textPassword"
             android:minHeight="48dp"

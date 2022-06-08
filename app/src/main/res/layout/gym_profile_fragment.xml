@@ -34,14 +34,14 @@
                 android:gravity="bottom"
                 android:paddingStart="25dp"
                 android:text="Gym 1"
-                android:textSize="16sp"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
         </androidx.cardview.widget.CardView>
 
         <TableLayout
             android:layout_width="match_parent"
-            android:layout_height="85dp">
+            android:layout_height="100dp">
 
             <TableRow
                 android:layout_width="match_parent"
@@ -55,17 +55,19 @@
                     android:paddingTop="10dp"
                     android:paddingBottom="10dp"
                     android:text="Ubicación"
-                    android:textAlignment="textStart" />
+                    android:textAlignment="textStart"
+                    android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/textViewGymLocation"
-                    android:layout_width="200dp"
+                    android:layout_width="205dp"
                     android:layout_height="wrap_content"
                     android:paddingHorizontal="10dp"
                     android:paddingTop="10dp"
                     android:paddingBottom="10dp"
                     android:text="Yanahuara"
-                    android:textAlignment="textEnd" />
+                    android:textAlignment="viewEnd"
+                    android:textSize="20sp" />
             </TableRow>
 
             <TableRow
@@ -80,7 +82,8 @@
                     android:paddingTop="10dp"
                     android:paddingBottom="10dp"
                     android:text="Capacidad"
-                    android:textAlignment="textStart" />
+                    android:textAlignment="textStart"
+                    android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/textViewGymCapacity"
@@ -90,14 +93,15 @@
                     android:paddingTop="10dp"
                     android:paddingBottom="10dp"
                     android:text="21"
-                    android:textAlignment="textEnd" />
+                    android:textAlignment="viewEnd"
+                    android:textSize="20sp" />
             </TableRow>
 
         </TableLayout>
 
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="366dp"
+            android:layout_height="match_parent"
             android:layout_gravity="center">
 
             <androidx.recyclerview.widget.RecyclerView

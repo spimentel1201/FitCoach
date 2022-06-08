@@ -5,6 +5,7 @@
     android:layout_height="wrap_content"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_marginBottom="5dp"
+    android:background="@drawable/item_round_border"
     android:orientation="horizontal">
 
     <LinearLayout

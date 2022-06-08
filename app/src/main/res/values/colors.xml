@@ -8,4 +8,5 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="orange">#e0903a</color>
+    <color name="fondox">#e0903a</color>
 </resources>

@@ -21,11 +21,13 @@
     <SearchView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
         android:textAlignment="textStart" />
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="620dp">
+        android:layout_height="match_parent">
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/listChatsUser"

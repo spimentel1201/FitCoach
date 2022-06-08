@@ -35,15 +35,15 @@
         <View
             android:id="@+id/divider2"
             android:layout_width="match_parent"
-            android:layout_height="20dp"
-            android:background="?android:attr/listDivider" />
+            android:layout_height="20dp" />
 
         <TextView
             android:id="@+id/textUser"
             android:layout_width="216dp"
             android:layout_height="wrap_content"
             android:paddingHorizontal="10dp"
-            android:text="Correo" />
+            android:text="Correo"
+            android:textSize="20sp" />
 
         <EditText
             android:id="@+id/textEmailUserL"
@@ -53,6 +53,7 @@
             android:inputType="textEmailAddress"
             android:minHeight="48dp"
             android:paddingHorizontal="10dp"
+            android:textSize="20sp"
             tools:ignore="TextContrastCheck,TextContrastCheck,TextContrastCheck" />
 
         <TextView
@@ -60,7 +61,8 @@
             android:layout_width="216dp"
             android:layout_height="wrap_content"
             android:paddingHorizontal="10dp"
-            android:text="Contraseña" />
+            android:text="Contraseña"
+            android:textSize="20sp" />
 
         <EditText
             android:id="@+id/textPasswordUserL"
@@ -69,17 +71,18 @@
             android:hint="********"
             android:inputType="textNoSuggestions|textPassword"
             android:minHeight="48dp"
-            android:paddingHorizontal="10dp" />
+            android:paddingHorizontal="10dp"
+            android:textSize="20sp" />
 
         <Button
             android:id="@+id/buttonSignIn"
             android:layout_width="213dp"
             android:layout_height="wrap_content"
-            android:background="#E0903A"
-            android:backgroundTint="#E0903A"
+            android:background="@drawable/button_rounded_border"
             android:onClick="iniciarSesion"
             android:text="Iniciar Sesion"
-            android:textColor="#4A148C" />
+            android:textColor="#4A148C"
+            android:textSize="16sp" />
 
         <!--<View
             android:id="@+id/divider4"
@@ -92,13 +95,13 @@
             android:layout_width="216dp"
             android:layout_height="28dp"
             android:gravity="center"
-            android:text="o Iniciar Sesioon con: " />
+            android:text="o Iniciar Sesioon con: "
+            android:textSize="16sp" />
 
         <View
             android:id="@+id/divider3"
             android:layout_width="match_parent"
-            android:layout_height="20dp"
-            android:background="?android:attr/listDivider" />
+            android:layout_height="20dp" />
 
         <LinearLayout
             android:layout_width="210dp"
@@ -111,6 +114,7 @@
                 android:layout_width="50sp"
                 android:layout_height="50sp"
                 android:layout_weight="1"
+                android:background="#00000000"
                 app:srcCompat="@drawable/google"
                 tools:ignore="SpeakableTextPresentCheck" />
 
@@ -118,14 +122,14 @@
                 android:id="@+id/divider"
                 android:layout_width="1dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="?android:attr/listDivider" />
+                android:layout_weight="1" />
 
             <ImageButton
                 android:id="@+id/facebookSignIn"
                 android:layout_width="50sp"
                 android:layout_height="50sp"
                 android:layout_weight="1"
+                android:background="#00000000"
                 app:srcCompat="@drawable/facebook"
                 tools:ignore="SpeakableTextPresentCheck" />
         </LinearLayout>
@@ -134,10 +138,10 @@
             android:id="@+id/buttonSignUp"
             android:layout_width="213dp"
             android:layout_height="wrap_content"
-            android:background="#E0903A"
-            android:backgroundTint="#E0903A"
+            android:background="@drawable/button_rounded_border"
             android:onClick="irRegistrarme"
             android:text="Registrarme"
-            android:textColor="#4A148C" />
+            android:textColor="#4A148C"
+            android:textSize="16sp" />
     </LinearLayout>
 </RelativeLayout>

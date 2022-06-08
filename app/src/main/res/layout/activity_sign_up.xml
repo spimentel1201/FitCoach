@@ -33,15 +33,15 @@
         <View
             android:id="@+id/divider2"
             android:layout_width="match_parent"
-            android:layout_height="20dp"
-            android:background="?android:attr/listDivider" />
+            android:layout_height="20dp" />
 
         <TextView
             android:id="@+id/textNameUser"
             android:layout_width="216dp"
             android:layout_height="wrap_content"
             android:paddingHorizontal="10dp"
-            android:text="Nombres" />
+            android:text="Nombres"
+            android:textSize="20sp" />
 
         <EditText
             android:id="@+id/textUserName"
@@ -51,6 +51,7 @@
             android:inputType="text"
             android:minHeight="48dp"
             android:paddingHorizontal="10dp"
+            android:textSize="20sp"
             tools:ignore="TextContrastCheck,TextContrastCheck,TextContrastCheck" />
 
         <TextView
@@ -58,7 +59,8 @@
             android:layout_width="216dp"
             android:layout_height="wrap_content"
             android:paddingHorizontal="10dp"
-            android:text="Apellidos" />
+            android:text="Apellidos"
+            android:textSize="20sp" />
 
         <EditText
             android:id="@+id/textUserLastName"
@@ -67,14 +69,16 @@
             android:hint="Doe Dom"
             android:inputType="text"
             android:minHeight="48dp"
-            android:paddingHorizontal="10dp" />
+            android:paddingHorizontal="10dp"
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/textUserEmail"
             android:layout_width="216dp"
             android:layout_height="wrap_content"
             android:paddingHorizontal="10dp"
-            android:text="Correo" />
+            android:text="Correo"
+            android:textSize="20sp" />
 
         <EditText
             android:id="@+id/textUserEmailR"
@@ -83,14 +87,16 @@
             android:hint="example@example.com"
             android:inputType="textEmailAddress"
             android:minHeight="48dp"
-            android:paddingHorizontal="10dp" />
+            android:paddingHorizontal="10dp"
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/textUserPassword"
             android:layout_width="216dp"
             android:layout_height="wrap_content"
             android:paddingHorizontal="10dp"
-            android:text="Contraseña" />
+            android:text="Contraseña"
+            android:textSize="20sp" />
 
         <EditText
             android:id="@+id/textPasswordUserR"
@@ -99,21 +105,25 @@
             android:hint="********"
             android:inputType="textNoSuggestions|textPassword"
             android:minHeight="48dp"
-            android:paddingHorizontal="10dp" />
+            android:paddingHorizontal="10dp"
+            android:textSize="20sp" />
 
         <CheckBox
             android:id="@+id/checkBoxTerms"
             android:layout_width="216dp"
             android:layout_height="wrap_content"
-            android:text="Acepto los términos y condiciones." />
+            android:text="Acepto los términos y condiciones."
+            android:textSize="16sp" />
 
         <Button
             android:id="@+id/buttonSignUp"
             android:layout_width="213dp"
             android:layout_height="wrap_content"
-            android:background="#E0903A"
+            android:height="32dp"
+            android:background="@drawable/button_rounded_border"
             android:text="Registrarme"
-            android:textColor="#4A148C" />
+            android:textColor="#4A148C"
+            android:textSize="16sp" />
 
         <TextView
             android:id="@+id/textView2"
@@ -133,6 +143,7 @@
                 android:layout_width="50sp"
                 android:layout_height="50sp"
                 android:layout_weight="1"
+                android:background="#00000000"
                 app:srcCompat="@drawable/google"
                 tools:ignore="SpeakableTextPresentCheck" />
 
@@ -140,18 +151,28 @@
                 android:id="@+id/divider"
                 android:layout_width="1dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="?android:attr/listDivider" />
+                android:layout_weight="1" />
 
             <ImageButton
                 android:id="@+id/facebookSignUp"
                 android:layout_width="50sp"
                 android:layout_height="50sp"
                 android:layout_weight="1"
+                android:background="#00000000"
                 app:srcCompat="@drawable/facebook"
                 tools:ignore="SpeakableTextPresentCheck" />
         </LinearLayout>
 
+        <Button
+            android:id="@+id/buttonLoginR"
+            android:layout_width="213dp"
+            android:layout_height="wrap_content"
+            android:height="32dp"
+            android:background="@drawable/button_rounded_border"
+            android:minHeight="32dp"
+            android:text="Iniciar Sesion"
+            android:textSize="16sp"
+            tools:ignore="TouchTargetSizeCheck" />
 
     </LinearLayout>
 

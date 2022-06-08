@@ -25,8 +25,7 @@
         <View
             android:id="@+id/divider2"
             android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:background="?android:attr/listDivider" />
+            android:layout_height="94dp" />
 
         <TextView
             android:id="@+id/textName"
@@ -35,7 +34,8 @@
             android:paddingHorizontal="10dp"
             android:paddingBottom="20dp"
             android:text="Nombre"
-            android:textAlignment="center" />
+            android:textAlignment="center"
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/textUserNameP"
@@ -44,7 +44,8 @@
             android:paddingHorizontal="10dp"
             android:paddingBottom="20dp"
             android:text="Jon Doe Mi"
-            android:textAlignment="center" />
+            android:textAlignment="center"
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/textEmail"
@@ -53,7 +54,8 @@
             android:paddingHorizontal="10dp"
             android:paddingBottom="20dp"
             android:text="Correo"
-            android:textAlignment="center" />
+            android:textAlignment="center"
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/textUserEmailP"
@@ -62,7 +64,8 @@
             android:paddingHorizontal="10dp"
             android:paddingBottom="20dp"
             android:text="micorreo@gmail.com"
-            android:textAlignment="center" />
+            android:textAlignment="center"
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/textSex"
@@ -71,7 +74,8 @@
             android:paddingHorizontal="10dp"
             android:paddingBottom="20dp"
             android:text="Sexo"
-            android:textAlignment="center" />
+            android:textAlignment="center"
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/textUserSexP"
@@ -80,19 +84,20 @@
             android:paddingHorizontal="10dp"
             android:paddingBottom="20dp"
             android:text="Masculino"
-            android:textAlignment="center" />
+            android:textAlignment="center"
+            android:textSize="20sp" />
 
         <View
             android:id="@+id/divider4"
             android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:background="?android:attr/listDivider" />
+            android:layout_height="80dp"/>
 
         <Button
             android:id="@+id/buttonSignOut"
             android:layout_width="213dp"
             android:layout_height="wrap_content"
-            android:text="Cerrar Sesion" />
+            android:text="Cerrar Sesion"
+            android:textSize="16sp" />
 
     </LinearLayout>
 

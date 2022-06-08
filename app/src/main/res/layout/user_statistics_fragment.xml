@@ -26,27 +26,51 @@
             android:textSize="28sp" />
 
         <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabsStats"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <com.google.android.material.tabs.TabItem
+                android:id="@+id/tabWeek"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Semana" />
 
             <com.google.android.material.tabs.TabItem
+                android:id="@+id/tabMonth"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Mes" />
         </com.google.android.material.tabs.TabLayout>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="237dp"
+            tools:ignore="SpeakableTextPresentCheck">
+
+        </androidx.viewpager.widget.ViewPager>
 
         <Button
             android:id="@+id/buttonFollow"
             android:layout_width="213dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:background="#E0903A"
-            android:backgroundTint="#E0903A"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/button_rounded_border"
             android:text="Seguimiento" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/statsList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </androidx.recyclerview.widget.RecyclerView>
+        </ScrollView>
     </LinearLayout>
 </RelativeLayout>

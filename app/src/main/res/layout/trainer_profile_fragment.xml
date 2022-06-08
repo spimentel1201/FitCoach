@@ -43,8 +43,7 @@
         <View
             android:id="@+id/divider2"
             android:layout_width="match_parent"
-            android:layout_height="20dp"
-            android:background="?android:attr/listDivider" />
+            android:layout_height="20dp" />
 
 
         <TableLayout
@@ -64,7 +63,8 @@
                     android:paddingTop="10dp"
                     android:paddingBottom="10dp"
                     android:text="Horarios"
-                    android:textAlignment="textStart" />
+                    android:textAlignment="textStart"
+                    android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/textViewTrainerSchedule"
@@ -75,7 +75,8 @@
                     android:paddingRight="20dp"
                     android:paddingBottom="10dp"
                     android:text="08:00 am - 19:00 pm"
-                    android:textAlignment="textEnd" />
+                    android:textAlignment="textEnd"
+                    android:textSize="20sp" />
             </TableRow>
 
             <TableRow
@@ -90,7 +91,8 @@
                     android:paddingTop="10dp"
                     android:paddingBottom="10dp"
                     android:text="Disponibilidad"
-                    android:textAlignment="textStart" />
+                    android:textAlignment="textStart"
+                    android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/textViewTrainerDays"
@@ -101,7 +103,8 @@
                     android:paddingRight="20dp"
                     android:paddingBottom="10dp"
                     android:text="L-M-J-V"
-                    android:textAlignment="textEnd" />
+                    android:textAlignment="textEnd"
+                    android:textSize="20sp" />
             </TableRow>
 
             <TableRow
@@ -116,7 +119,8 @@
                     android:paddingTop="10dp"
                     android:paddingBottom="10dp"
                     android:text="Especialidad"
-                    android:textAlignment="textStart" />
+                    android:textAlignment="textStart"
+                    android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/textViewTrainerDomain"
@@ -128,32 +132,38 @@
                     android:paddingBottom="10dp"
                     android:text="Aumento de Musculatura"
                     android:textAlignment="textEnd"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textSize="20sp" />
             </TableRow>
         </TableLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
             android:gravity="center"
             android:orientation="horizontal">
 
             <ImageButton
                 android:id="@+id/buttonChatToTrainer"
-                android:layout_width="wrap_content"
+                android:layout_width="197dp"
                 android:layout_height="match_parent"
+                android:layout_gravity="center"
                 android:layout_marginEnd="10dp"
-                android:src="@drawable/chat">
+                android:background="#00000000"
+                android:src="@drawable/chat"
+                tools:ignore="SpeakableTextPresentCheck">
 
             </ImageButton>
 
             <RatingBar
                 android:id="@+id/ratingBarTrainer"
                 style="@android:style/Widget.Material.RatingBar.Indicator"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginStart="10dp">
+                android:layout_marginStart="10dp"
+                android:numStars="5"
+                android:scrollbarSize="3dp">
 
             </RatingBar>
         </LinearLayout>

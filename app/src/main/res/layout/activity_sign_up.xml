@@ -52,6 +52,7 @@
             android:minHeight="48dp"
             android:paddingHorizontal="10dp"
             android:textSize="20sp"
+            android:background="@null"
             tools:ignore="TextContrastCheck,TextContrastCheck,TextContrastCheck" />
 
         <TextView
@@ -70,6 +71,7 @@
             android:inputType="text"
             android:minHeight="48dp"
             android:paddingHorizontal="10dp"
+            android:background="@null"
             android:textSize="20sp" />
 
         <TextView
@@ -88,6 +90,7 @@
             android:inputType="textEmailAddress"
             android:minHeight="48dp"
             android:paddingHorizontal="10dp"
+            android:background="@null"
             android:textSize="20sp" />
 
         <TextView
@@ -106,6 +109,7 @@
             android:inputType="textNoSuggestions|textPassword"
             android:minHeight="48dp"
             android:paddingHorizontal="10dp"
+            android:background="@null"
             android:textSize="20sp" />
 
         <CheckBox
@@ -113,7 +117,7 @@
             android:layout_width="216dp"
             android:layout_height="wrap_content"
             android:text="Acepto los términos y condiciones."
-            android:textSize="16sp" />
+            android:textSize="14sp" />
 
         <Button
             android:id="@+id/buttonSignUp"
@@ -136,6 +140,7 @@
             android:layout_width="210dp"
             android:layout_height="56dp"
             android:gravity="center"
+            android:layout_marginBottom="10dp"
             android:orientation="horizontal">
 
             <ImageButton
@@ -166,7 +171,7 @@
         <Button
             android:id="@+id/buttonLoginR"
             android:layout_width="213dp"
-            android:layout_height="wrap_content"
+            android:layout_height="53dp"
             android:height="32dp"
             android:background="@drawable/button_rounded_border"
             android:minHeight="32dp"

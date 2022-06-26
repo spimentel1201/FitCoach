@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "803160361236",
+    "project_id": "fitcoach-82223",
+    "storage_bucket": "fitcoach-82223.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:803160361236:android:0251999dbdea8d8b9fda01",
+        "android_client_info": {
+          "package_name": "com.idnp.fitcoach"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "803160361236-ogtajld50p00tjg59ugo2b1fdpl7r7o8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDRn5Ry-2QbKHWhfhSrYBeEgH3zGiFTC24"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "803160361236-ogtajld50p00tjg59ugo2b1fdpl7r7o8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

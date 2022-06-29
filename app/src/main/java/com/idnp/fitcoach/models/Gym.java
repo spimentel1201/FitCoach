@@ -4,7 +4,7 @@ import android.net.Uri;
 
 public class Gym {
     private int idGym;
-    private Uri imgUrl;
+    private String imgUrl;
     private long latitude;
     private long longitude;
     private String name;
@@ -19,11 +19,11 @@ public class Gym {
         this.idGym = idGym;
     }
 
-    public Uri getImgUrl() {
+    public String getImgUrl() {
         return imgUrl;
     }
 
-    public void setImgUrl(Uri imgUrl) {
+    public void setImgUrl(String imgUrl) {
         this.imgUrl = imgUrl;
     }
 

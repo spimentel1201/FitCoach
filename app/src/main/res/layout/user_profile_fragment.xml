@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
+    android:background="@color/gray"
     tools:context=".UserProfileFragment">
 
     <LinearLayout
@@ -15,17 +16,28 @@
         tools:layout_editor_absoluteX="1dp"
         tools:layout_editor_absoluteY="1dp">
 
+        <TextView
+            android:id="@+id/textPerfil"
+            android:layout_width="216dp"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="10dp"
+            android:paddingBottom="20dp"
+            android:text="Mi Perfil"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:textSize="28sp" />
+
         <ImageView
             android:id="@+id/imageViewUser"
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:contentDescription="TODO"
-            app:srcCompat="@drawable/user_profile" />
+            app:srcCompat="@drawable/user_icon" />
 
         <View
             android:id="@+id/divider2"
             android:layout_width="match_parent"
-            android:layout_height="94dp" />
+            android:layout_height="74dp" />
 
         <TextView
             android:id="@+id/textName"
@@ -34,6 +46,7 @@
             android:paddingHorizontal="10dp"
             android:paddingBottom="20dp"
             android:text="Nombre"
+            android:textColor="@color/white"
             android:textAlignment="center"
             android:textSize="20sp" />
 
@@ -45,6 +58,7 @@
             android:paddingBottom="20dp"
             android:text="Jon Doe Mi"
             android:textAlignment="center"
+            android:textColor="@color/white"
             android:textSize="20sp" />
 
         <TextView
@@ -54,6 +68,7 @@
             android:paddingHorizontal="10dp"
             android:paddingBottom="20dp"
             android:text="Correo"
+            android:textColor="@color/white"
             android:textAlignment="center"
             android:textSize="20sp" />
 
@@ -64,6 +79,7 @@
             android:paddingHorizontal="10dp"
             android:paddingBottom="20dp"
             android:text="micorreo@gmail.com"
+            android:textColor="@color/white"
             android:textAlignment="center"
             android:textSize="20sp" />
 
@@ -74,6 +90,7 @@
             android:paddingHorizontal="10dp"
             android:paddingBottom="20dp"
             android:text="Sexo"
+            android:textColor="@color/white"
             android:textAlignment="center"
             android:textSize="20sp" />
 
@@ -84,6 +101,7 @@
             android:paddingHorizontal="10dp"
             android:paddingBottom="20dp"
             android:text="Masculino"
+            android:textColor="@color/white"
             android:textAlignment="center"
             android:textSize="20sp" />
 
@@ -96,6 +114,7 @@
             android:id="@+id/buttonSignOut"
             android:layout_width="213dp"
             android:layout_height="wrap_content"
+            android:onClick="signOut"
             android:text="Cerrar Sesion"
             android:textSize="16sp" />
 

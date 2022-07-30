@@ -1,10 +1,30 @@
 package com.idnp.fitcoach.models;
 
-public class Coach extends User{
+public class Coach{
     private int idCoach;
     private String speciality;
-    private int ratingScale;
+    private int rating;
     private String schedule;
+    private String imgUrlC;
+
+    private int idUser;
+    private String user_name;
+    private String password;
+    private String name;
+    private Character gender;
+    private String email;
+
+    public Coach(){
+
+    }
+
+    public Coach(int idCoach, String speciality, int ratingScale, String schedule, String imgUrlC){
+        this.idCoach = idCoach;
+        this.speciality = speciality;
+        this.rating = ratingScale;
+        this.schedule = schedule;
+        this.imgUrlC = imgUrlC;
+    }
 
     public int getIdCoach() {
         return idCoach;
@@ -22,12 +42,12 @@ public class Coach extends User{
         this.speciality = speciality;
     }
 
-    public int getRatingScale() {
-        return ratingScale;
+    public int getRating() {
+        return rating;
     }
 
-    public void setRatingScale(int ratingScale) {
-        this.ratingScale = ratingScale;
+    public void setRating(int ratingScale) {
+        this.rating = ratingScale;
     }
 
     public String getSchedule() {
@@ -37,4 +57,13 @@ public class Coach extends User{
     public void setSchedule(String schedule) {
         this.schedule = schedule;
     }
+
+    public String getImgUrlC() {
+        return imgUrlC;
+    }
+
+    public void setImgUrlC(String imgUrlC) {
+        this.imgUrlC = imgUrlC;
+    }
+
 }

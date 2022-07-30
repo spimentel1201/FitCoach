@@ -9,23 +9,32 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:gravity="center"
+        android:background="@color/black"
         android:orientation="vertical">
 
         <TextView
             android:id="@+id/textView_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
             android:fontFamily="cursive"
             android:text="FitCoach"
-            android:textAlignment="center"
-            android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
+            android:textSize="40dp"
+            android:textColor="@color/colorPrimary"
+            android:textFontWeight="400"
+            android:textAlignment="center" />
 
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="249dp"
-            android:layout_height="306dp"
-            app:srcCompat="@drawable/logov2" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottue"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/splash">
+
+        </com.airbnb.lottie.LottieAnimationView>
     </LinearLayout>
 </RelativeLayout>

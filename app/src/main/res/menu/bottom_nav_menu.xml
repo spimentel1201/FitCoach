@@ -5,18 +5,16 @@
         android:id="@+id/navigation_home"
         android:icon="@drawable/ic_home_black_24dp"
         android:title="@string/title_home" />
-
-    <item
-        android:id="@+id/navigation_TrainerProfile"
-        android:icon="@drawable/ic_dashboard_black_24dp"
-        android:title="@string/trainerProfile" />
     <item
         android:id="@+id/navigation_Maps"
-        android:icon="@drawable/ic_notifications_black_24dp"
-        android:title="@string/Maps" />
+        android:icon="@android:drawable/ic_menu_mylocation"
+        android:title="@string/Survey" />
     <item
-        android:id="@+id/navigation_GymProfile"
-        android:icon="@drawable/ic_notifications_black_24dp"
-        android:title="@string/GymProfile" />
-
+        android:id="@+id/navigation_Diet"
+        android:icon="@android:drawable/ic_menu_compass"
+        android:title="@string/Diet" />
+    <item
+        android:id="@+id/navigation_UserProfile"
+        android:icon="@android:drawable/ic_menu_info_details"
+        android:title="@string/userProfile" />
 </menu>

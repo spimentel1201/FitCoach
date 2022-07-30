@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:gravity="center"
+    android:id="@+id/fragmentHome"
+    android:background="@color/gray"
     tools:context=".ui.home.HomeFragment">
 
     <TextView
@@ -19,6 +20,7 @@
         android:layout_marginBottom="10dp"
         android:fontFamily="cursive"
         android:text="FitCoach"
+        android:textColor="@color/white"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="42sp" />
@@ -26,7 +28,9 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/listGymCards"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
+        android:layout_gravity="center"
+        android:background="@color/gray"
         android:layout_marginEnd="20dp" />
 </LinearLayout>

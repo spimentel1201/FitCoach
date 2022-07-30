@@ -1,26 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
+    android:gravity="top|center"
+    android:orientation="vertical"
+    android:background="@color/black"
     tools:context=".LoginActivity">
 
-    <LinearLayout
-        android:layout_width="409dp"
-        android:layout_height="match_parent"
-        android:gravity="center|center_vertical"
-        android:orientation="vertical"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="1dp">
+
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="217dp"
-            android:layout_height="226dp"
-            android:contentDescription="TODO"
-            app:srcCompat="@drawable/logov2" />
+            android:layout_width="250dp"
+            android:layout_height="240dp"
+            app:srcCompat="@drawable/logov2"/>
 
         <TextView
             android:id="@+id/textViewAppName"
@@ -29,8 +24,9 @@
             android:fontFamily="cursive"
             android:text="FitCoach"
             android:textAlignment="center"
+            android:textColor="@color/white"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-            android:textSize="28sp" />
+            android:textSize="50sp" />
 
         <View
             android:id="@+id/divider2"
@@ -43,7 +39,9 @@
             android:layout_height="wrap_content"
             android:paddingHorizontal="10dp"
             android:text="Correo"
-            android:textSize="20sp" />
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:textSize="24sp" />
 
         <EditText
             android:id="@+id/textEmailUserL"
@@ -54,7 +52,9 @@
             android:inputType="textEmailAddress"
             android:minHeight="48dp"
             android:paddingHorizontal="10dp"
-            android:textSize="20sp"
+            android:textSize="24sp"
+            android:textColor="@color/white"
+            android:textAlignment="center"
             tools:ignore="TextContrastCheck,TextContrastCheck,TextContrastCheck" />
 
         <TextView
@@ -63,7 +63,9 @@
             android:layout_height="wrap_content"
             android:paddingHorizontal="10dp"
             android:text="Contraseña"
-            android:textSize="20sp" />
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:textSize="24sp" />
 
         <EditText
             android:id="@+id/textPasswordUserL"
@@ -73,16 +75,18 @@
             android:inputType="textNoSuggestions|textPassword"
             android:minHeight="48dp"
             android:paddingHorizontal="10dp"
+            android:textColor="@color/white"
+            android:textAlignment="center"
             android:background="@null"
             android:layout_marginBottom="10dp"
-            android:textSize="20sp" />
+            android:textSize="24sp" />
 
         <Button
             android:id="@+id/buttonSignIn"
             android:layout_width="213dp"
             android:layout_height="wrap_content"
             android:background="@drawable/button_rounded_border"
-            android:onClick="iniciarSesion"
+            android:onClick="inicioSesionF"
             android:text="Iniciar Sesion"
             android:textColor="@color/white"
             android:textSize="16sp" />
@@ -98,8 +102,11 @@
             android:layout_width="216dp"
             android:layout_height="28dp"
             android:gravity="center"
+            android:layout_marginTop="10dp"
             android:text="o Iniciar Sesioon con: "
-            android:textSize="16sp" />
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:textSize="18sp" />
 
         <View
             android:id="@+id/divider3"
@@ -110,6 +117,7 @@
             android:layout_width="210dp"
             android:layout_height="56dp"
             android:gravity="center"
+            android:background="@color/colorPrimary"
             android:orientation="horizontal">
 
             <ImageButton
@@ -118,6 +126,7 @@
                 android:layout_height="50sp"
                 android:layout_weight="1"
                 android:background="#00000000"
+                android:onClick="iniciarSesionGoogle"
                 app:srcCompat="@drawable/google"
                 tools:ignore="SpeakableTextPresentCheck" />
 
@@ -145,6 +154,6 @@
             android:onClick="irRegistrarme"
             android:text="Registrarme"
             android:textColor="@color/white"
+            android:layout_marginTop="20dp"
             android:textSize="16sp" />
-    </LinearLayout>
-</RelativeLayout>
+</LinearLayout>

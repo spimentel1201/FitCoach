@@ -5,62 +5,316 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@drawable/item_round_border"
-    android:layout_marginBottom="5dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginTop="13dp"
     android:orientation="horizontal">
 
     <LinearLayout
-        android:id="@+id/itemListUserDiet"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <ImageView
-            android:id="@+id/imageDietItem"
-            android:layout_width="100dp"
-            android:layout_height="match_parent"
-            android:layout_weight=".1"
-            android:padding="2dp"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/diet"
-            tools:srcCompat="@drawable/diet" />
-
+        android:layout_marginTop="8dp"
+        android:background="@color/gray"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical">
         <LinearLayout
+            android:id="@+id/itemListUserDietBreakfast"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="vertical"
-            android:padding="3dp">
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
 
-            <TextView
-                android:id="@+id/textItemDietMoment"
+            <ImageView
+                android:id="@+id/imageDietItemB"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".1"
+                android:padding="2dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/diet"
+                android:layout_marginRight="3dp"
+                tools:srcCompat="@drawable/diet" />
+
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="left"
-                android:layout_weight="3"
-                android:text="Desayuno"
-                android:textColor="@color/black"
-                android:textSize="16sp"
-                android:textStyle="bold" />
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="3dp">
 
-            <TextView
-                android:id="@+id/textItemDietFood"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="left"
-                android:paddingRight="5dp"
-                android:text="Huevos revueltos"
-                android:textColor="@color/black"
-                android:textSize="14sp" />
+                <TextView
+                    android:id="@+id/textItemDietMomentB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_weight="3"
+                    android:text="Desayuno"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/textItemDietHour"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="left"
-                android:paddingRight="5dp"
-                android:text="07:00"
-                android:textColor="@color/black"
-                android:textSize="14sp" />
+                <TextView
+                    android:id="@+id/textItemDietFoodB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:paddingRight="5dp"
+                    android:text="Huevos revueltos"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/textItemDietHourB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:paddingRight="5dp"
+                    android:text="07:00 am"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+            </LinearLayout>
         </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/itemListUserDietMM"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageDietItemMM"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".1"
+                android:padding="2dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/diet"
+                android:layout_marginRight="3dp"
+                tools:srcCompat="@drawable/diet" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="3dp">
+
+                <TextView
+                    android:id="@+id/textItemDietMomentMM"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_weight="3"
+                    android:text="Media Mañana"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textItemDietFoodMM"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:paddingRight="5dp"
+                    android:text="Huevos revueltos"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/textItemDietHourMM"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:paddingRight="5dp"
+                    android:text="10:00 am"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/itemListUserDietL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageDietItemL"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".1"
+                android:padding="2dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/diet"
+                android:layout_marginRight="3dp"
+                tools:srcCompat="@drawable/diet" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="3dp">
+
+                <TextView
+                    android:id="@+id/textItemDietMomentL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_weight="3"
+                    android:text="Almuerzo"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textItemDietFoodL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:paddingRight="5dp"
+                    android:text="Huevos revueltos"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/textItemDietHourL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:paddingRight="5dp"
+                    android:text="12:00 pm"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/itemListUserDietMA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageDietItemMA"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".1"
+                android:padding="2dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/diet"
+                android:layout_marginRight="3dp"
+                tools:srcCompat="@drawable/diet" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="3dp">
+
+                <TextView
+                    android:id="@+id/textItemDietMomentMA"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_weight="3"
+                    android:text="Media Cena"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textItemDietFoodMA"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:paddingRight="5dp"
+                    android:text="Huevos revueltos"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/textItemDietHourMA"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:paddingRight="5dp"
+                    android:text="04:00 pm"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/itemListUserDietD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageDietItemD"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".1"
+                android:padding="2dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/diet"
+                android:layout_marginRight="3dp"
+                tools:srcCompat="@drawable/diet" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="3dp">
+
+                <TextView
+                    android:id="@+id/textItemDietMomentD"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_weight="3"
+                    android:text="Cena"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textItemDietFoodD"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:paddingRight="5dp"
+                    android:text="Huevos revueltos"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/textItemDietHourD"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:paddingRight="5dp"
+                    android:text="07:00 pm"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
     </LinearLayout>
 </RelativeLayout>

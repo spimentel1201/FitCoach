@@ -2,6 +2,7 @@ package com.idnp.fitcoach;
 
 import androidx.lifecycle.ViewModelProvider;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -12,14 +13,17 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-import com.idnp.fitcoach.models.Gym;
+import com.idnp.fitcoach.models.User;
 
 import java.util.ArrayList;
 
@@ -27,9 +31,11 @@ public class UserProfileFragment extends Fragment {
 
     private UserProfileViewModel mViewModel;
     private DatabaseReference database;
-    private ArrayList<Gym> ListGym = new ArrayList<>();
-    private ArrayList<Gym> tmpListGym = new ArrayList<>();
-    TextView a1;
+    private FirebaseAuth firebaseAuth;
+    private ArrayList<User> ListUser = new ArrayList<>();
+    private ArrayList<User> tmpListUser = new ArrayList<>();
+    TextView a1,a2,a3;
+    Button signoutbtn;
 
     public static UserProfileFragment newInstance() {
         return new UserProfileFragment();
@@ -41,9 +47,24 @@ public class UserProfileFragment extends Fragment {
         View view = inflater.inflate(R.layout.user_profile_fragment, container, false);
 
         a1 = (TextView) view.findViewById(R.id.textUserNameP);
+        a2 = (TextView) view.findViewById(R.id.textUserEmailP);
+        a3 = (TextView) view.findViewById(R.id.textUserSexP);
+        signoutbtn = (Button) view.findViewById(R.id.buttonSignOut);
         database = FirebaseDatabase.getInstance().getReference();
-        LeerDatos();
-        //a1.setText(ListGym.get(3).getName());
+        firebaseAuth = FirebaseAuth.getInstance();
+        FirebaseUser firebaseUser = firebaseAuth.getCurrentUser();
+        a1.setText(firebaseUser.getDisplayName());
+        a2.setText(firebaseUser.getEmail());
+
+        signoutbtn.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View view) {
+                firebaseAuth.signOut();
+                checkUser();
+            }
+        });
+
+        //LeerDatos();
+        //a1.setText(ListUser.get(3).getName());
         return  view;
     }
 
@@ -56,19 +77,19 @@ public class UserProfileFragment extends Fragment {
 
     public void LeerDatos() {
 
-        database.child("gyms").addListenerForSingleValueEvent(new ValueEventListener() {
+        database.child("Coachs").addListenerForSingleValueEvent(new ValueEventListener() {
 
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
-                    Gym np = snapshot.getValue(Gym.class);
-                    tmpListGym.add(np);
+                    User np = snapshot.getValue(User.class);
+                    tmpListUser.add(np);
                     Log.d("debug",np.getName());
                 }
-                ListGym.clear();
-                ListGym.addAll(tmpListGym);
+                ListUser.clear();
+                ListUser.addAll(tmpListUser);
                 Log.d("debug","Estamos aquí");
-                a1.setText(ListGym.get(3).getName());
+                a1.setText(ListUser.get(3).getName());
             }
 
             @Override
@@ -78,6 +99,15 @@ public class UserProfileFragment extends Fragment {
         });
 
 
+    }
+
+    private void checkUser() {
+        FirebaseUser firebaseUser = firebaseAuth.getCurrentUser();
+        if(firebaseUser==null){
+            startActivity(new Intent(this.getContext(),LoginActivity.class));
+        }else{
+
+        }
     }
 
 }

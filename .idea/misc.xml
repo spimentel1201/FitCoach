@@ -5,6 +5,7 @@
       <map>
         <entry key="..\:/Users/Sonny/AndroidStudioProjects/FitCoach/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.202" />
         <entry key="..\:/Users/Sonny/AndroidStudioProjects/FitCoach/app/src/main/res/drawable/button_rounded_border.xml" value="0.202" />
+        <entry key="..\:/Users/Sonny/AndroidStudioProjects/FitCoach/app/src/main/res/drawable/ic_dashboard_black_24dp.xml" value="0.206" />
         <entry key="..\:/Users/Sonny/AndroidStudioProjects/FitCoach/app/src/main/res/drawable/ic_launcher_background.xml" value="0.202" />
         <entry key="..\:/Users/Sonny/AndroidStudioProjects/FitCoach/app/src/main/res/drawable/ic_notifications_black_24dp.xml" value="0.202" />
         <entry key="..\:/Users/Sonny/AndroidStudioProjects/FitCoach/app/src/main/res/drawable/item_round_border.xml" value="0.139" />
@@ -13,7 +14,7 @@
         <entry key="..\:/Users/Sonny/AndroidStudioProjects/FitCoach/app/src/main/res/layout/activity_login.xml" value="0.1984375" />
         <entry key="..\:/Users/Sonny/AndroidStudioProjects/FitCoach/app/src/main/res/layout/activity_main.xml" value="0.19427083333333334" />
         <entry key="..\:/Users/Sonny/AndroidStudioProjects/FitCoach/app/src/main/res/layout/activity_sign_up.xml" value="0.1984375" />
-        <entry key="..\:/Users/Sonny/AndroidStudioProjects/FitCoach/app/src/main/res/layout/activity_splash_screen.xml" value="0.19427083333333334" />
+        <entry key="..\:/Users/Sonny/AndroidStudioProjects/FitCoach/app/src/main/res/layout/activity_splash_screen.xml" value="0.1" />
         <entry key="..\:/Users/Sonny/AndroidStudioProjects/FitCoach/app/src/main/res/layout/chat_fragment.xml" value="0.19427083333333334" />
         <entry key="..\:/Users/Sonny/AndroidStudioProjects/FitCoach/app/src/main/res/layout/diet_fragment.xml" value="0.19427083333333334" />
         <entry key="..\:/Users/Sonny/AndroidStudioProjects/FitCoach/app/src/main/res/layout/fragment_dashboard.xml" value="0.19427083333333334" />
@@ -21,20 +22,22 @@
         <entry key="..\:/Users/Sonny/AndroidStudioProjects/FitCoach/app/src/main/res/layout/fragment_maps.xml" value="0.19427083333333334" />
         <entry key="..\:/Users/Sonny/AndroidStudioProjects/FitCoach/app/src/main/res/layout/fragment_month_stats_graphic.xml" value="0.1796875" />
         <entry key="..\:/Users/Sonny/AndroidStudioProjects/FitCoach/app/src/main/res/layout/fragment_notifications.xml" value="0.19427083333333334" />
+        <entry key="..\:/Users/Sonny/AndroidStudioProjects/FitCoach/app/src/main/res/layout/fragment_survey.xml" value="0.19322916666666667" />
         <entry key="..\:/Users/Sonny/AndroidStudioProjects/FitCoach/app/src/main/res/layout/fragment_week_stats_graphic.xml" value="0.19427083333333334" />
-        <entry key="..\:/Users/Sonny/AndroidStudioProjects/FitCoach/app/src/main/res/layout/gym_profile_fragment.xml" value="0.25" />
+        <entry key="..\:/Users/Sonny/AndroidStudioProjects/FitCoach/app/src/main/res/layout/gym_profile_fragment.xml" value="0.1814814814814815" />
         <entry key="..\:/Users/Sonny/AndroidStudioProjects/FitCoach/app/src/main/res/layout/list_item_chat.xml" value="0.19427083333333334" />
         <entry key="..\:/Users/Sonny/AndroidStudioProjects/FitCoach/app/src/main/res/layout/list_item_diet.xml" value="0.22" />
         <entry key="..\:/Users/Sonny/AndroidStudioProjects/FitCoach/app/src/main/res/layout/list_item_gym.xml" value="0.19322916666666667" />
-        <entry key="..\:/Users/Sonny/AndroidStudioProjects/FitCoach/app/src/main/res/layout/list_item_gym_trainer.xml" value="0.19427083333333334" />
+        <entry key="..\:/Users/Sonny/AndroidStudioProjects/FitCoach/app/src/main/res/layout/list_item_gym_trainer.xml" value="0.22" />
         <entry key="..\:/Users/Sonny/AndroidStudioProjects/FitCoach/app/src/main/res/layout/list_item_stat.xml" value="0.19427083333333334" />
         <entry key="..\:/Users/Sonny/AndroidStudioProjects/FitCoach/app/src/main/res/layout/single_chat_fragment.xml" value="0.19427083333333334" />
-        <entry key="..\:/Users/Sonny/AndroidStudioProjects/FitCoach/app/src/main/res/layout/trainer_profile_fragment.xml" value="0.19427083333333334" />
+        <entry key="..\:/Users/Sonny/AndroidStudioProjects/FitCoach/app/src/main/res/layout/trainer_profile_fragment.xml" value="0.2" />
         <entry key="..\:/Users/Sonny/AndroidStudioProjects/FitCoach/app/src/main/res/layout/user_profile_fragment.xml" value="0.18" />
         <entry key="..\:/Users/Sonny/AndroidStudioProjects/FitCoach/app/src/main/res/layout/user_statistics_fragment.xml" value="0.19427083333333334" />
         <entry key="..\:/Users/Sonny/AndroidStudioProjects/FitCoach/app/src/main/res/menu/bottom_nav_menu.xml" value="0.19427083333333334" />
         <entry key="..\:/Users/Sonny/AndroidStudioProjects/FitCoach/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
         <entry key="..\:/Users/Sonny/AndroidStudioProjects/FitCoach/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1" />
+        <entry key="..\:/Users/Sonny/AndroidStudioProjects/FitCoach/app/src/main/res/xml/network_security_config.xml" value="0.1984375" />
       </map>
     </option>
   </component>

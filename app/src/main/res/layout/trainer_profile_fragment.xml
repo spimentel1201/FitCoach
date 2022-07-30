@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
+    android:background="@color/gray"
     tools:context=".TrainerProfileFragment">
 
     <LinearLayout
@@ -24,7 +25,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Jose"
-            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/white" />
 
         <View
             android:id="@+id/divider5"
@@ -33,7 +35,7 @@
             android:background="?android:attr/listDivider" />
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/imageViewCoachT"
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:contentDescription="TODO"
@@ -64,6 +66,7 @@
                     android:paddingBottom="10dp"
                     android:text="Horarios"
                     android:textAlignment="textStart"
+                    android:textColor="@color/white"
                     android:textSize="20sp" />
 
                 <TextView
@@ -75,7 +78,8 @@
                     android:paddingRight="20dp"
                     android:paddingBottom="10dp"
                     android:text="08:00 am - 19:00 pm"
-                    android:textAlignment="textEnd"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
                     android:textSize="20sp" />
             </TableRow>
 
@@ -92,6 +96,7 @@
                     android:paddingBottom="10dp"
                     android:text="Disponibilidad"
                     android:textAlignment="textStart"
+                    android:textColor="@color/white"
                     android:textSize="20sp" />
 
                 <TextView
@@ -103,7 +108,8 @@
                     android:paddingRight="20dp"
                     android:paddingBottom="10dp"
                     android:text="L-M-J-V"
-                    android:textAlignment="textEnd"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
                     android:textSize="20sp" />
             </TableRow>
 
@@ -120,6 +126,7 @@
                     android:paddingBottom="10dp"
                     android:text="Especialidad"
                     android:textAlignment="textStart"
+                    android:textColor="@color/white"
                     android:textSize="20sp" />
 
                 <TextView
@@ -131,8 +138,9 @@
                     android:paddingRight="20dp"
                     android:paddingBottom="10dp"
                     android:text="Aumento de Musculatura"
-                    android:textAlignment="textEnd"
+                    android:textAlignment="center"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/white"
                     android:textSize="20sp" />
             </TableRow>
         </TableLayout>

@@ -1,13 +1,21 @@
 package com.idnp.fitcoach.models;
 
-class User {
+public class User {
     private int idUser;
     private String user_name;
     private String password;
     private String name;
-    private String lastname;
     private Character gender;
     private String email;
+
+    public User(int idUser, String user_name, String password, String name, Character gender, String email) {
+        this.idUser = idUser;
+        this.user_name = user_name;
+        this.password = password;
+        this.name = name;
+        this.gender = gender;
+        this.email = email;
+    }
 
     public int getIdUser() {
         return idUser;
@@ -39,14 +47,6 @@ class User {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public String getLastname() {
-        return lastname;
-    }
-
-    public void setLastname(String lastname) {
-        this.lastname = lastname;
     }
 
     public Character getGender() {

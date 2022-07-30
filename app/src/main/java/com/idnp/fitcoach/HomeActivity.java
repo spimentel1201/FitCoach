@@ -1,12 +1,15 @@
 package com.idnp.fitcoach;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 
 import com.google.android.gms.maps.MapFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
@@ -15,6 +18,8 @@ import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -29,9 +34,12 @@ import java.util.ArrayList;
 public class HomeActivity extends AppCompatActivity {
     HomeFragment homeFragment = new HomeFragment();
     MapsFragment mapFragment = new MapsFragment();
-    UserProfileFragment profileFragment = new UserProfileFragment();
-    GymProfileFragment gymProfileFragment = new GymProfileFragment();
+    SurveyFragment surveyFragment = new SurveyFragment();
+    UserProfileFragment userProfileFragment = new UserProfileFragment();
+    DietFragment dietFragment = new DietFragment();
+    TrainerProfileFragment trainerProfileFragment = new TrainerProfileFragment();
     private DatabaseReference database;
+    private FirebaseAuth firebaseAuth;
     private ArrayList<Gym> ListGym = new ArrayList<>();
     private ArrayList<Gym> tmpListGym = new ArrayList<>();
     private ActivityHomeBinding binding;
@@ -39,10 +47,14 @@ public class HomeActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+        //getSupportActionBar().hide();
+        ActionBar ab = getSupportActionBar();
+        ab.hide();
         binding = ActivityHomeBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         database = FirebaseDatabase.getInstance().getReference();
+        firebaseAuth = FirebaseAuth.getInstance();
+        checkUser();
         //LeerDatos();
         /*database.child("gyms").addValueEventListener(new ValueEventListener() {
             @Override
@@ -72,6 +84,17 @@ public class HomeActivity extends AppCompatActivity {
         loadFragment(homeFragment);
     }
 
+    private void checkUser() {
+        FirebaseUser firebaseUser = firebaseAuth.getCurrentUser();
+        if(firebaseUser==null){
+            startActivity(new Intent(this,LoginActivity.class));
+        }else{
+            String email = firebaseUser.getEmail();
+            String name = firebaseUser.getDisplayName();
+
+        }
+    }
+
     private final BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener = new BottomNavigationView.OnNavigationItemSelectedListener() {
         @Override
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
@@ -80,13 +103,13 @@ public class HomeActivity extends AppCompatActivity {
                     loadFragment(homeFragment);
                     return true;
                 case R.id.navigation_Maps:
-                    loadFragment(mapFragment);
+                    loadFragment(surveyFragment);
                     return true;
-                case R.id.navigation_TrainerProfile:
-                    loadFragment(profileFragment);
+                case R.id.navigation_Diet:
+                    loadFragment(dietFragment);
                     return true;
-                case R.id.navigation_GymProfile:
-                    loadFragment(gymProfileFragment);
+                case R.id.navigation_UserProfile:
+                    loadFragment(userProfileFragment);
 
             }
             return false;
@@ -121,5 +144,12 @@ public class HomeActivity extends AppCompatActivity {
         });
 
 
+    }
+
+    public void goTo(View view){
+        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+        transaction.replace(R.id.fragmentHome, trainerProfileFragment);
+        transaction.addToBackStack(null);
+        transaction.commit();
     }
 }

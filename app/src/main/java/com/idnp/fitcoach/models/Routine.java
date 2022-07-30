@@ -4,6 +4,14 @@ public class Routine {
     private int idRoutine;
     private String description;
 
+    public Routine(){
+
+    }
+    public Routine(int idRoutine, String description) {
+        this.idRoutine = idRoutine;
+        this.description = description;
+    }
+
     public int getIdRoutine() {
         return idRoutine;
     }

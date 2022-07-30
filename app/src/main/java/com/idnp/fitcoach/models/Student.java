@@ -6,6 +6,14 @@ public class Student extends User {
     private float height;
     private float weight;
 
+    public Student(int idUser, String user_name, String password, String name, Character gender, String email,int idSt, int age, float he, float we ) {
+        super(idUser, user_name, password, name, gender, email);
+        this.idStudent = idSt;
+        this.age = age;
+        this.height = he;
+        this.weight = we;
+    }
+
     public int getIdStudent() {
         return idStudent;
     }

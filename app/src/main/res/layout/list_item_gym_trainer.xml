@@ -5,14 +5,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginBottom="5dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginTop="13dp"
     android:background="@drawable/item_round_border"
     android:orientation="horizontal">
 
     <LinearLayout
-        android:id="@+id/itemListGymTrainer"
+        android:id="@+id/itemListGymTrainerCoach"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/gray"
         android:orientation="vertical">
 
         <androidx.cardview.widget.CardView
@@ -20,9 +22,10 @@
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:layout_gravity="center"
-            card_view:cardCornerRadius="20dp">
+            card_view:cardCornerRadius="8dp">
 
             <ImageView
+                android:id="@+id/imageCoach"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:scaleType="centerCrop"
@@ -36,10 +39,10 @@
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
             android:gravity="bottom"
-            android:paddingStart="25dp"
-            android:text="Jose"
-            android:textSize="22sp"
-            android:textStyle="bold" />
+            android:paddingStart="10dp"
+            android:text="Migu"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
 
 
     </LinearLayout>

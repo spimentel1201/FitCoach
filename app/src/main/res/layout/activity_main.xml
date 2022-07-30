@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:elevation="2dp"
+    android:background="@color/gray"
     tools:context=".MainActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -29,7 +30,8 @@
 
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:background="@color/gray">
 
                     <TextView
                         android:id="@+id/textView1"
@@ -59,7 +61,8 @@
 
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:background="@color/gray">
 
                     <TextView
                         android:id="@+id/textView2"
@@ -101,7 +104,8 @@
 
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:background="@color/gray">
 
                     <TextView
                         android:id="@+id/textView3"
@@ -131,7 +135,8 @@
 
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:background="@color/gray">
 
                     <TextView
                         android:id="@+id/textView4"
@@ -172,7 +177,8 @@
 
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:background="@color/gray">
 
                     <TextView
                         android:id="@+id/textView5"
@@ -202,7 +208,8 @@
 
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:background="@color/gray">
 
                     <TextView
                         android:id="@+id/textView6"

@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "803160361236",
+    "firebase_url": "https://fitcoach-82223-default-rtdb.firebaseio.com",
     "project_id": "fitcoach-82223",
     "storage_bucket": "fitcoach-82223.appspot.com"
   },
@@ -13,6 +14,14 @@
         }
       },
       "oauth_client": [
+        {
+          "client_id": "803160361236-a76i8efrpudab1gt6r99ntmvbe42ur95.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.idnp.fitcoach",
+            "certificate_hash": "764af78de0ddfcfdc49a0647e123a3320f20b13b"
+          }
+        },
         {
           "client_id": "803160361236-ogtajld50p00tjg59ugo2b1fdpl7r7o8.apps.googleusercontent.com",
           "client_type": 3

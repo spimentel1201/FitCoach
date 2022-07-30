@@ -11,6 +11,20 @@ public class Gym {
     private String city;
     private String country;
 
+    public Gym(){
+
+    }
+
+    public Gym(int idGym, String imgUrl, long latitude, long longitude, String name, String city, String country) {
+        this.idGym = idGym;
+        this.imgUrl = imgUrl;
+        this.latitude = latitude;
+        this.longitude = longitude;
+        this.name = name;
+        this.city = city;
+        this.country = country;
+    }
+
     public int getIdGym() {
         return idGym;
     }

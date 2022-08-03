@@ -3,6 +3,7 @@ package com.idnp.fitcoach.models;
 public class Coach{
     private int idCoach;
     private String speciality;
+    private String nameC;
     private int rating;
     private String schedule;
     private String imgUrlC;
@@ -18,12 +19,13 @@ public class Coach{
 
     }
 
-    public Coach(int idCoach, String speciality, int ratingScale, String schedule, String imgUrlC){
+    public Coach(int idCoach, String speciality, int ratingScale, String schedule, String imgUrlC, String nameC){
         this.idCoach = idCoach;
         this.speciality = speciality;
         this.rating = ratingScale;
         this.schedule = schedule;
         this.imgUrlC = imgUrlC;
+        this.nameC = nameC;
     }
 
     public int getIdCoach() {
@@ -64,6 +66,14 @@ public class Coach{
 
     public void setImgUrlC(String imgUrlC) {
         this.imgUrlC = imgUrlC;
+    }
+
+    public String getNameC() {
+        return nameC;
+    }
+
+    public void setNameC(String nameC) {
+        this.nameC = nameC;
     }
 
 }

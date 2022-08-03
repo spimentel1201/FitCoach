@@ -6,12 +6,16 @@
         android:icon="@drawable/ic_home_black_24dp"
         android:title="@string/title_home" />
     <item
+        android:id="@+id/navigation_Routines"
+        android:icon="@drawable/icon_routine"
+        android:title="@string/Routines" />
+    <item
         android:id="@+id/navigation_Maps"
-        android:icon="@android:drawable/ic_menu_mylocation"
+        android:icon="@drawable/icon_survey"
         android:title="@string/Survey" />
     <item
         android:id="@+id/navigation_Diet"
-        android:icon="@android:drawable/ic_menu_compass"
+        android:icon="@drawable/icon_diet"
         android:title="@string/Diet" />
     <item
         android:id="@+id/navigation_UserProfile"

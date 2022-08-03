@@ -35,6 +35,7 @@ import com.idnp.fitcoach.databinding.FragmentHomeBinding;
 import com.idnp.fitcoach.models.Gym;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class HomeFragment extends Fragment{
 
@@ -58,22 +59,6 @@ public class HomeFragment extends Fragment{
         database = FirebaseDatabase.getInstance().getReference();
         //Recycler view
         listaGymss = (RecyclerView) root.findViewById(R.id.listGymCards);
-        /*listaGymss.setOnItemClickListener(new AdapterView.OnItemClickListener(){
-
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                // Create new fragment and transaction
-                Fragment newFragment = new TrainerProfileFragment();
-                // consider using Java coding conventions (upper first char class names!!!)
-                FragmentTransaction transaction = getFragmentManager().beginTransaction();
-                // Replace whatever is in the fragment_container view with this fragment,
-                // and add the transaction to the back stack
-                transaction.replace(R.id.listGymCards , newFragment);
-                transaction.addToBackStack(null);
-                // Commit the transaction
-                transaction.commit();
-            }
-        });*/
         listaGymss.setLayoutManager(new LinearLayoutManager(getContext()));
         LeerDatos();
         //adapter = new GymsAdapter(ListGym, getContext());
@@ -119,6 +104,7 @@ public class HomeFragment extends Fragment{
                         bundle.putString("gymImage", gymItem.getImgUrl());
                         bundle.putString("gymLocation",gymItem.getCity().trim());
                         bundle.putString("gymCapacity","50");
+                        bundle.putInt("gymPosition",position);
                         bundle.putStringArrayList("gymTrainersArray",new ArrayList<String>());
                         getParentFragmentManager().setFragmentResult("key",bundle);
                         // Create new fragment and transaction
@@ -144,32 +130,5 @@ public class HomeFragment extends Fragment{
 
             }
         });
-
-
     }
-/*
-    @Override
-    public void onClick(View view, int position) {
-        Bundle bundle = new Bundle();
-        final Gym gymItem = ListGym.get(position);
-        bundle.putString("gymName",gymItem.getName().trim());
-        bundle.putString("gymLocation",gymItem.getCity().trim());
-        bundle.putString("gymCapacity","50");
-        bundle.putStringArrayList("gymTrainersArray",new ArrayList<String>());
-        getParentFragmentManager().setFragmentResult("key",bundle);
-
-
-        //Paso 1: Obtener la instancia del administrador de fragmentos
-        FragmentManager fragmentManager = getFragmentManager();
-
-        //Paso 2: Crear una nueva transacción
-        FragmentTransaction transaction = fragmentManager.beginTransaction();
-
-        //Paso 3: Crear un nuevo fragmento y añadirlo
-        GymProfileFragment fragment = new GymProfileFragment();
-        transaction.add(R.id.gymProfileFra, fragment);
-
-        //Paso 4: Confirmar el cambio
-        transaction.commit();
-    }*/
 }

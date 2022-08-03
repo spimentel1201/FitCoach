@@ -31,8 +31,8 @@ public class SurveyFragment extends Fragment {
         WebView myWebView = (WebView) view.findViewById(R.id.survey);
         WebSettings webSettings = myWebView.getSettings();
         webSettings.setJavaScriptEnabled(true);
-        myWebView.setWebViewClient(new Callback());
-        myWebView.loadUrl("www.youtube.com");
+        //myWebView.setWebViewClient(new Callback());
+        myWebView.loadUrl("https://docs.google.com/forms/d/e/1FAIpQLSdi_VW1-_pdwHl3hFqvpqYwSYTIuQsPueXXhYCcdu-wEaIJLg/viewform?usp=sf_link");
         return view;
     }
 

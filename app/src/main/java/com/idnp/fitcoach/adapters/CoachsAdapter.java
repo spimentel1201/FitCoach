@@ -38,7 +38,7 @@ public class CoachsAdapter extends RecyclerView.Adapter<CoachsAdapter.CoachViewH
     @Override
     public void onBindViewHolder(@NonNull CoachsAdapter.CoachViewHolder holder, int position) {
         String rating = Integer.toString(listaCoachs.get(position).getRating());
-        holder.textCoachName.setText(rating);
+        holder.textCoachName.setText(listaCoachs.get(position).getNameC());
         Picasso.get().load(listaCoachs.get(position).getImgUrlC()).into(imageViewCoach);
         //holder.cardTrainerName.setText(listaCoachs.get(position).getFecha().toString());
     }

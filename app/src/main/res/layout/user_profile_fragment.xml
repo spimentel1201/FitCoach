@@ -37,7 +37,7 @@
         <View
             android:id="@+id/divider2"
             android:layout_width="match_parent"
-            android:layout_height="74dp" />
+            android:layout_height="25dp" />
 
         <TextView
             android:id="@+id/textName"
@@ -99,7 +99,7 @@
             android:layout_width="216dp"
             android:layout_height="wrap_content"
             android:paddingHorizontal="10dp"
-            android:paddingBottom="20dp"
+            android:paddingBottom="10dp"
             android:text="Masculino"
             android:textColor="@color/white"
             android:textAlignment="center"
@@ -108,7 +108,7 @@
         <View
             android:id="@+id/divider4"
             android:layout_width="match_parent"
-            android:layout_height="80dp"/>
+            android:layout_height="20dp"/>
 
         <Button
             android:id="@+id/buttonSignOut"
@@ -116,6 +116,7 @@
             android:layout_height="wrap_content"
             android:onClick="signOut"
             android:text="Cerrar Sesion"
+            android:background="@drawable/button_rounded_border"
             android:textSize="16sp" />
 
     </LinearLayout>

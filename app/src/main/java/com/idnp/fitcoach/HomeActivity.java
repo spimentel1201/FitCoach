@@ -34,6 +34,7 @@ import java.util.ArrayList;
 public class HomeActivity extends AppCompatActivity {
     HomeFragment homeFragment = new HomeFragment();
     MapsFragment mapFragment = new MapsFragment();
+    RoutinesFragment routinesFragment = new RoutinesFragment();
     SurveyFragment surveyFragment = new SurveyFragment();
     UserProfileFragment userProfileFragment = new UserProfileFragment();
     DietFragment dietFragment = new DietFragment();
@@ -101,6 +102,9 @@ public class HomeActivity extends AppCompatActivity {
             switch (item.getItemId()){
                 case R.id.navigation_home:
                     loadFragment(homeFragment);
+                    return true;
+                case R.id.navigation_Routines:
+                    loadFragment(routinesFragment);
                     return true;
                 case R.id.navigation_Maps:
                     loadFragment(surveyFragment);

@@ -53,7 +53,7 @@ public class UserProfileFragment extends Fragment {
         database = FirebaseDatabase.getInstance().getReference();
         firebaseAuth = FirebaseAuth.getInstance();
         FirebaseUser firebaseUser = firebaseAuth.getCurrentUser();
-        a1.setText(firebaseUser.getDisplayName());
+        a1.setText("Maicol Perez");
         a2.setText(firebaseUser.getEmail());
 
         signoutbtn.setOnClickListener(new View.OnClickListener(){

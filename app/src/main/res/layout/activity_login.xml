@@ -9,13 +9,11 @@
     android:background="@color/black"
     tools:context=".LoginActivity">
 
-
-
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="250dp"
-            android:layout_height="240dp"
-            app:srcCompat="@drawable/logov2"/>
+            android:layout_width="226dp"
+            android:layout_height="194dp"
+            app:srcCompat="@drawable/logov2" />
 
         <TextView
             android:id="@+id/textViewAppName"
@@ -97,7 +95,7 @@
             android:layout_height="20dp"
             android:background="?android:attr/listDivider" />-->
 
-        <TextView
+        <!--<TextView
             android:id="@+id/textView2"
             android:layout_width="216dp"
             android:layout_height="28dp"
@@ -106,14 +104,14 @@
             android:text="o Iniciar Sesioon con: "
             android:textColor="@color/white"
             android:textAlignment="center"
-            android:textSize="18sp" />
+            android:textSize="18sp" />-->
 
         <View
             android:id="@+id/divider3"
             android:layout_width="match_parent"
             android:layout_height="20dp" />
 
-        <LinearLayout
+        <!--<LinearLayout
             android:layout_width="210dp"
             android:layout_height="56dp"
             android:gravity="center"
@@ -144,7 +142,7 @@
                 android:background="#00000000"
                 app:srcCompat="@drawable/facebook"
                 tools:ignore="SpeakableTextPresentCheck" />
-        </LinearLayout>
+        </LinearLayout>-->
 
         <Button
             android:id="@+id/buttonSignUp"

@@ -47,6 +47,7 @@ public class GymProfileFragment extends Fragment {
     TextView gymLocation;
     TextView gymCapacity;
     ImageView imageGym;
+    static Integer positionn=0;
 
     public static GymProfileFragment newInstance() {
         return new GymProfileFragment();
@@ -75,6 +76,7 @@ public class GymProfileFragment extends Fragment {
                 String locationGym = result.getString("gymLocation");
                 String capacityGym = result.getString("gymCapacity");
                 String imageURLGym = result.getString("gymImage");
+                GymProfileFragment.positionn = result.getInt("gymPosition");
                 gymLocation.setText(locationGym);
                 gymCapacity.setText(capacityGym);
                 Picasso.get().load(imageURLGym).resize(1280,720).centerCrop().into(imageGym);
@@ -98,7 +100,8 @@ public class GymProfileFragment extends Fragment {
     }
 
     public void LeerDatos() {
-
+        String pos = Integer.toString(GymProfileFragment.positionn);
+        //Log.d("debuger",pos);
         database.child("gyms").child("1").child("Coach").addListenerForSingleValueEvent(new ValueEventListener() {
 
             @Override
@@ -125,6 +128,9 @@ public class GymProfileFragment extends Fragment {
         });
 
 
+    }
+    public Integer getPositionn(){
+        return this.positionn;
     }
 
 }
